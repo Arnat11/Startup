@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff9ef">
+    <meta name="description" content="MALI BLEND — freshly blended, naturally you. สมูทตี้และน้ำผลไม้ปั่นจากวัตถุดิบธรรมชาติ">
+    <title>MALI BLEND — Freshly blended, naturally you.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="เมนูหลัก">
+            <a class="brand" href="#home" aria-label="MALI BLEND หน้าหลัก"><img class="brand-logo" src="../images/mali-blend-wordmark.png" alt="MALI BLEND"></a>
+            <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">หน้าหลัก</a><a href="#features">จุดเด่น</a><a href="#menu">เมนูของเรา</a><a href="about.html">เกี่ยวกับเรา</a><a href="#contact">ติดต่อเรา</a>
+                <button class="cart-button" id="cartButton" type="button" aria-label="เปิดตะกร้าสินค้า">ตะกร้า <span class="cart-count" aria-live="polite">0</span></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="sun">✦</span> สดจากสวน ปั่นแก้วต่อแก้ว</span>
+                <h1>เติมความสดชื่น<br>ให้ทุกวัน <em>สดใสขึ้น!</em></h1>
+                <p>ผลไม้คัดสด รสชาติเต็มแก้ว เลือกความหวานได้ตามใจ<br class="desktop-only"> แวะมาปั่นความสุขด้วยกันนะ</p>
+                <div class="hero-actions"><a class="button button-primary" href="#menu">เลือกเมนูโปรด <span>→</span></a><a class="button button-download" href="../menu-mali-blend.txt" download>ดาวน์โหลดเมนู <span>↓</span></a></div>
+                <span class="hero-note">♡ สดใหม่ ไม่ใส่สีสังเคราะห์</span>
+                <div class="hero-stats"><div><strong>100%</strong><span>ผลไม้สด</span></div><div><strong>หวาน</strong><span>เลือกได้</span></div><div><strong>ทุกวัน</strong><span>ปั่นแก้วต่อแก้ว</span></div></div>
+            </div>
+            <div class="hero-art" aria-label="ภาพประกอบสมูทตี้ผลไม้สด" role="img">
+                <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✳</span>
+                <div class="fruit fruit-orange">🍊</div><div class="fruit fruit-strawberry">🍓</div><div class="fruit fruit-leaf">🌿</div>
+                <div class="smoothie-cup"><div class="cup-straw"></div><div class="cup-lid"></div><div class="cup-body"><span>MALI BLEND</span><b>♡</b></div></div>
+                <div class="art-caption">ทำจากผลไม้จริง <b>อร่อยจริงด้วย!</b></div>
+            </div>
+            <a class="scroll-cue" href="#menu">เลื่อนดูเมนู <span>↓</span></a>
+        </section>
+        <section class="features-section" id="features">
+            <div class="features-heading"><span class="eyebrow">ทำไมต้อง MALI BLEND</span><h2>ความสดชื่นที่ <em>ใส่ใจ</em></h2><p>เราอยากให้ทุกแก้วอร่อยพอดีกับวันที่คุณต้องการ</p></div>
+            <div class="features-grid">
+                <article class="feature-card"><span class="feature-icon feature-fruit" aria-hidden="true">🍓</span><h3>ผลไม้คัดสด</h3><p>เลือกผลไม้สุกพอดี เตรียมสะอาด และปั่นใหม่ตามออเดอร์</p></article>
+                <article class="feature-card"><span class="feature-icon feature-sweet" aria-hidden="true">♡</span><h3>เลือกความหวานได้</h3><p>ปรับความหวานตามชอบ หรือแจ้งไม่เติมน้ำเชื่อมได้</p></article>
+                <article class="feature-card"><span class="feature-icon feature-fresh" aria-hidden="true">✦</span><h3>ปั่นสดทุกแก้ว</h3><p>ทำแก้วต่อแก้ว ให้ได้รสชาติสดชื่นก่อนเสิร์ฟ</p></article>
+            </div>
+        </section>
+        <section class="menu-section" id="menu">
+            <div class="section-heading"><div><span class="eyebrow">แก้วโปรดของคุณ</span><h2>เมนู <em>สดชื่น</em></h2></div><p>สมูทตี้ ชา และกาแฟ เลือกความหวานกับรูปแบบที่ชอบได้<br>เริ่มต้นเพียง 45 บาท</p></div>
+            <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+            <p class="menu-hint">ชาและกาแฟเลือกได้ทั้งร้อน เย็น หรือปั่น <span>☕</span></p>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about-sticker">ปั่นสด<br><strong>ทุกแก้ว!</strong></div>
+            <div><span class="eyebrow">ความอร่อยที่ตั้งใจ</span><h2>MALI BLEND<br><em>ใส่ใจทุกส่วนผสม</em></h2><p>เราเลือกผลไม้สุกพอดีจากแหล่งคุณภาพ ล้างสะอาด และปั่นใหม่เมื่อสั่งทุกแก้ว อยากหวานน้อย เพิ่มโยเกิร์ต หรือไม่ใส่น้ำตาล บอกเราได้เลย</p><a class="text-link" href="about.html">รู้จักเราเพิ่มเติม <span>→</span></a></div>
+            <div class="about-fruit" aria-hidden="true">🥭</div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="contact-intro"><span class="eyebrow">ทักมาหาเราได้เลย</span><h2>อยากดื่มอะไรดี?<br><em>คุยกับ MALI BLEND</em></h2><p>สอบถามเมนูหรือสั่งเครื่องดื่มได้ทางช่องทางของร้าน</p></div>
+            <div class="contact-grid">
+                <article class="contact-card"><span class="contact-icon">☎</span><div><h3>โทรศัพท์</h3><p>065xxxxxx</p></div></article>
+                <article class="contact-card"><span class="contact-icon line-icon">LINE</span><div><h3>LINE Official</h3><p>@mali_blend_demo (ตัวอย่าง)</p></div></article>
+                <article class="contact-card"><span class="contact-icon">◎</span><div><h3>Instagram</h3><p>MALI BLEND</p></div></article>
+                <article class="contact-card"><span class="contact-icon facebook-icon">f</span><div><h3>Facebook</h3><p>MALI BLEND</p></div></article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#home" aria-label="MALI BLEND หน้าหลัก"><img class="brand-logo" src="../images/mali-blend-wordmark.png" alt="MALI BLEND"></a><p>Freshly blended, naturally you. ♡</p><span>© 2026 MALI BLEND</span></footer>
+    <dialog class="menu-dialog" id="menuDialog" aria-labelledby="dialogTitle">
+        <article class="dialog-card">
+            <button class="dialog-close" type="button" aria-label="ปิดรายละเอียด">×</button>
+            <div class="dialog-top"><span id="dialogEmoji" aria-hidden="true">🍓</span></div>
+            <div class="dialog-content">
+                <div class="dialog-heading"><span>รายละเอียดเมนู</span><strong id="dialogPrice"></strong></div>
+                <h2 id="dialogTitle">เมนู</h2><p id="dialogDescription" class="dialog-description"></p>
+                <div class="dialog-details">
+                    <section><h3>ส่วนประกอบ</h3><ul id="dialogIngredients"></ul></section>
+                    <section><h3>จุดเด่นของวัตถุดิบ</h3><ul id="dialogBenefits"></ul></section>
+                </div>
+                <div class="drink-options" id="drinkOptions" hidden>
+                    <label for="drinkStyle">เลือกรูปแบบเครื่องดื่ม</label>
+                    <select id="drinkStyle"><option value="เย็น">เย็น</option></select>
+                </div>
+                <div class="sweetness-options">
+                    <label for="sweetnessLevel">เลือกระดับความหวาน</label>
+                    <select id="sweetnessLevel"><option value="0">หวาน 0%</option><option value="25">หวาน 25%</option><option value="50" selected>หวาน 50%</option><option value="75">หวาน 75%</option><option value="100">หวาน 100%</option></select>
+                    <p class="sweetness-hint" id="sweetnessHint" hidden>สมูทตี้ผลไม้เลือกระดับความหวานได้ตั้งแต่ 25%</p>
+                </div>
+                <div class="quantity-options">
+                    <label for="drinkQuantity">จำนวนแก้ว</label>
+                    <input id="drinkQuantity" type="number" min="1" max="20" value="1" inputmode="numeric">
+                </div>
+                <details class="topping-options"><summary>เพิ่มท็อปปิ้ง <span>เลือกได้หลายอย่าง · เริ่มต้น ฿5</span></summary><fieldset id="toppingOptionsList" aria-label="เลือกท็อปปิ้ง"></fieldset></details>
+                <button class="button button-primary add-selected-button" id="addSelectedToCart" type="button">เพิ่มลงตะกร้า <span>＋</span></button>
+                <p class="dialog-note">เลือกท็อปปิ้งได้หลายอย่าง โดยคิดราคาเพิ่มต่อแก้วตามรายการ</p>
+            </div>
+        </article>
+    </dialog>
+    <dialog class="menu-dialog cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+        <article class="dialog-card cart-card">
+            <button class="dialog-close" type="button" aria-label="ปิดตะกร้า">×</button>
+            <div class="cart-content">
+                <span class="eyebrow">MALI BLEND</span>
+                <h2 id="cartTitle">ตะกร้าของคุณ</h2>
+                <div class="cart-items" id="cartItemsList"></div>
+                <div class="cart-total"><span>รวมทั้งหมด</span><strong id="cartTotal">฿0</strong></div>
+                <button class="button button-primary cart-continue" id="continueShopping" type="button">เลือกเมนูต่อ <span>→</span></button>
+                <button class="button button-order-later" id="placeOrderWithoutPayment" type="button">สั่งก่อน ชำระทีหลัง <span>→</span></button>
+                <button class="button button-primary cart-checkout" id="openCheckout" type="button">ชำระด้วย PromptPay <span>→</span></button>
+            </div>
+        </article>
+    </dialog>
+    <dialog class="menu-dialog order-dialog" id="orderDialog" aria-labelledby="orderTitle">
+        <article class="dialog-card order-card">
+            <button class="dialog-close" type="button" aria-label="ปิดหน้ายืนยันออเดอร์">×</button>
+            <div class="order-content">
+                <section id="orderFormPanel">
+                    <span class="eyebrow">MALI BLEND · ORDER</span>
+                    <h2 id="orderTitle">ยืนยันคำสั่งซื้อ</h2>
+                    <p class="order-intro">สั่งได้เลยโดยยังไม่ต้องชำระเงิน</p>
+                    <form class="payment-form order-form" id="orderForm">
+                        <label>ชื่อผู้สั่ง<input name="customer" required maxlength="60" autocomplete="name" placeholder="ชื่อ-นามสกุล"></label>
+                        <label>เบอร์ติดต่อ<input name="phone" required inputmode="tel" maxlength="20" autocomplete="tel" placeholder="เบอร์โทรศัพท์"></label>
+                        <button class="button button-primary payment-copy" type="submit">ส่งคำสั่งซื้อ <span>→</span></button>
+                    </form>
+                    <p class="order-prototype-note">ส่งออเดอร์แล้ว ร้านจะเห็นในหน้ารายการออเดอร์เมื่อเปิดระบบร้านอยู่</p>
+                </section>
+                <section id="orderSuccessPanel" hidden>
+                    <span class="order-success-mark" aria-hidden="true">✓</span>
+                    <h2>รับคำสั่งซื้อแล้ว</h2>
+                    <p>หมายเลขออเดอร์ <strong id="orderNumber"></strong></p>
+                    <p id="orderCustomerSummary" class="order-customer-summary"></p>
+                    <ul id="confirmedOrderItems" class="confirmed-order-items"></ul>
+                    <div class="cart-total"><span>รวมทั้งหมด</span><strong id="confirmedOrderTotal"></strong></div>
+                    <p class="order-prototype-note">บันทึกออเดอร์ถึงระบบร้านแล้ว ร้านสามารถตรวจสอบและอัปเดตสถานะได้</p>
+                    <button class="button button-primary add-selected-button" id="closeOrderConfirmation" type="button">เรียบร้อย <span>✓</span></button>
+                </section>
+            </div>
+        </article>
+    </dialog>
+    <dialog class="menu-dialog payment-dialog" id="paymentDialog" aria-labelledby="paymentTitle">
+        <article class="dialog-card payment-card">
+            <button class="dialog-close" type="button" aria-label="ปิดหน้าชำระเงิน">×</button>
+            <div class="payment-content">
+                <span class="eyebrow">MALI BLEND · PROMPTPAY</span>
+                <h2 id="paymentTitle">ชำระเงินด้วย QR</h2>
+                <div class="payment-total"><span>ยอดที่ต้องโอน</span><strong id="paymentTotal">฿0</strong></div>
+                <div class="payment-layout">
+                    <img class="payment-qr" src="../images/promptpay-qr.jpg" alt="QR PromptPay สำหรับโอนเงินให้ร้าน MALI BLEND">
+                    <div class="payment-instructions"><strong>วิธีชำระเงิน</strong><ol><li>สแกน QR ด้วยแอปธนาคาร</li><li>กรอกยอดให้ตรงกับยอดที่ต้องโอน</li><li>ตรวจชื่อบัญชีก่อนยืนยันการโอน</li></ol><p>QR นี้เป็น QR คงที่ กรุณากรอกยอดเองและตรวจสอบยอดก่อนโอน</p></div>
+                </div>
+                <form class="payment-form" id="paymentForm">
+                    <label>ชื่อผู้สั่ง<input name="customer" required maxlength="60" autocomplete="name" placeholder="ชื่อ-นามสกุล"></label>
+                    <label>เบอร์ติดต่อ<input name="phone" required inputmode="tel" maxlength="20" autocomplete="tel" placeholder="เบอร์โทรศัพท์"></label>
+                    <button class="button button-primary payment-copy" type="submit">คัดลอกรายการเพื่อแจ้งร้าน <span>↗</span></button>
+                </form>
+                <div class="button line-order-link line-order-placeholder">LINE ID ตัวอย่าง: @mali_blend_demo</div>
+                <textarea class="payment-copy-fallback" id="paymentOrderText" readonly hidden aria-label="รายละเอียดออเดอร์สำหรับคัดลอก"></textarea>
+                <p class="payment-note" id="paymentNote">ID LINE นี้เป็นข้อมูลตัวอย่าง ยังไม่สามารถเปิดแชตได้ เมื่อใส่ ID ร้านจริงแล้ว ลูกค้าจะส่งรายการให้ร้านตรวจสอบยอดและยืนยันออเดอร์ได้</p>
+            </div>
+        </article>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scrip.js"></script>
+</body>
+</html>

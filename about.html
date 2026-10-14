@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff9ef">
+    <meta name="description" content="รู้จัก MALI BLEND ร้านสมูทตี้ผลไม้สด ปั่นใหม่ทุกแก้ว เลือกความหวานได้ตามใจ">
+    <title>เกี่ยวกับเรา — MALI BLEND</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body class="about-page">
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="เมนูหลัก">
+            <a class="brand" href="index.html#home" aria-label="MALI BLEND หน้าหลัก"><img class="brand-logo" src="../images/mali-blend-wordmark.png" alt="MALI BLEND"></a>
+            <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+            <div class="nav-links" id="aboutNavLinks">
+                <a href="index.html#home">หน้าหลัก</a><a href="index.html#features">จุดเด่น</a><a href="index.html#menu">เมนูของเรา</a><a href="#story" aria-current="page">เกี่ยวกับเรา</a><a href="index.html#contact">ติดต่อเรา</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-hero" id="story">
+            <span class="eyebrow">OUR STORY · MALI BLEND</span>
+            <h1>ปั่นความสดชื่น<br><em>ด้วยความใส่ใจ</em></h1>
+            <p>เราเชื่อว่าเครื่องดื่มแก้วโปรดเริ่มจากวัตถุดิบดี ๆ และความตั้งใจในทุกขั้นตอน</p>
+            <div class="about-hero-art" aria-hidden="true">
+                <span class="about-art-fruit about-art-strawberry">🍓</span>
+                <span class="about-art-fruit about-art-orange">🍊</span>
+                <span class="about-art-leaf">🌿</span>
+                <div class="about-art-cup"><i class="about-art-straw"></i><i class="about-art-lid"></i><b>MALI<br>BLEND</b></div>
+            </div>
+        </section>
+        <section class="about-story">
+            <div class="about-story-art">
+                <span class="story-fruit-badge story-berry" aria-hidden="true">🍓</span>
+                <span class="story-fruit-badge story-mango" aria-hidden="true">🥭</span>
+                <span class="story-leaf-badge" aria-hidden="true">🌿</span>
+                <div class="about-story-logo-frame">
+                    <img class="about-story-logo" src="../images/mali-blend-logo.png" alt="MALI BLEND — Freshly blended, naturally you">
+                </div>
+            </div>
+            <div class="about-story-copy">
+                <span class="eyebrow">ความตั้งใจของเรา</span>
+                <h2>สดใหม่ในแบบ<br><em>ที่เป็นคุณ</em></h2>
+                <p>MALI BLEND เกิดจากความชอบในผลไม้และเครื่องดื่มปั่น เราตั้งใจคัดผลไม้ที่สุกพอดี เตรียมอย่างสะอาด และปั่นเมื่อมีออเดอร์ เพื่อให้ได้รสชาติที่สดชื่นในทุกแก้ว</p>
+                <p>แต่ละคนชอบความหวานไม่เหมือนกัน เราจึงเปิดให้เลือกความหวาน และปรับส่วนผสมบางอย่างได้ตามความชอบ</p>
+            </div>
+        </section>
+        <section class="about-values">
+            <div class="features-heading"><span class="eyebrow">OUR PROMISE</span><h2>สิ่งที่เราใส่ใจ <em>ทุกวัน</em></h2></div>
+            <div class="features-grid">
+                <article class="feature-card"><span class="feature-icon feature-fruit" aria-hidden="true">🍓</span><h3>คัดวัตถุดิบ</h3><p>ใส่ใจเลือกผลไม้และเตรียมวัตถุดิบก่อนนำมาปั่น</p></article>
+                <article class="feature-card"><span class="feature-icon feature-sweet" aria-hidden="true">♡</span><h3>ฟังความชอบของคุณ</h3><p>เลือกความหวานและแจ้งความต้องการเพิ่มเติมได้</p></article>
+                <article class="feature-card"><span class="feature-icon feature-fresh" aria-hidden="true">✦</span><h3>ทำสดตามออเดอร์</h3><p>ปั่นแก้วต่อแก้ว พร้อมเสิร์ฟความสดชื่น</p></article>
+            </div>
+        </section>
+        <section class="about-cta">
+            <h2>พร้อมเติมความสดชื่นหรือยัง?</h2>
+            <p>เลือกแก้วโปรด แล้วให้ MALI BLEND ปั่นให้คุณ</p>
+            <a class="button button-primary" href="index.html#menu">ดูเมนูทั้งหมด <span>→</span></a>
+        </section>
+    </main>
+    <footer class="footer"><a class="brand" href="index.html#home" aria-label="MALI BLEND หน้าหลัก"><img class="brand-logo" src="../images/mali-blend-wordmark.png" alt="MALI BLEND"></a><p>Freshly blended, naturally you. ♡</p><span>© 2026 MALI BLEND</span></footer>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const links = document.querySelector("#aboutNavLinks");
+        toggle.addEventListener("click", () => {
+            const open = links.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", String(open));
+            toggle.setAttribute("aria-label", open ? "ปิดเมนู" : "เปิดเมนู");
+            toggle.textContent = open ? "×" : "☰";
+        });
+        links.addEventListener("click", (event) => {
+            if (event.target.closest("a")) {
+                links.classList.remove("open");
+                toggle.setAttribute("aria-expanded", "false");
+                toggle.textContent = "☰";
+            }
+        });
+    </script>
+</body>
+</html>
