@@ -271,7 +271,10 @@ document.querySelector("#orderForm").addEventListener("submit", async (event) =>
     submitButton.disabled = true;
     submitButton.textContent = "กำลังส่งออเดอร์…";
     try {
-        const response = await fetch(`${window.location.protocol}//${window.location.hostname}:8765/api/orders`, {
+        const localHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+        const apiBase = String(window.MALI_ORDER_API_BASE || (localHost ? `${window.location.protocol}//${window.location.hostname}:8765` : "")).replace(/\/$/, "");
+        if (!apiBase) throw new Error("เว็บบน GitHub แสดงเมนูได้ แต่รับออเดอร์จริงต้องเชื่อมเซิร์ฟเวอร์ร้านออนไลน์ก่อน");
+        const response = await fetch(`${apiBase}/api/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ customer, phone, items, total })

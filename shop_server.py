@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent
 DATABASE = ROOT / "shop-orders.sqlite3"
 ADMIN_KEY = os.environ.get("SHOP_ADMIN_KEY") or secrets.token_urlsafe(24)
 STATUSES = {"ใหม่", "กำลังทำ", "พร้อมรับ", "เสร็จแล้ว", "ยกเลิก"}
+ALLOWED_ORIGINS = {origin.strip() for origin in os.environ.get("SHOP_ALLOWED_ORIGINS", "").split(",") if origin.strip()}
 
 
 def connect_db():
@@ -37,7 +38,8 @@ class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
         origin = self.headers.get("Origin", "")
         parsed = urlparse(origin)
-        if parsed.scheme == "http" and parsed.hostname in {"localhost", "127.0.0.1"}:
+        local_origin = parsed.scheme == "http" and parsed.hostname in {"localhost", "127.0.0.1"}
+        if local_origin or origin in ALLOWED_ORIGINS:
             self.send_header("Access-Control-Allow-Origin", origin)
             self.send_header("Vary", "Origin")
             self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
@@ -138,7 +140,7 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("SHOP_PORT", "8765"))
+    port = int(os.environ.get("PORT", os.environ.get("SHOP_PORT", "8765")))
     server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
     print(f"MALI BLEND order server: http://127.0.0.1:{port}/mali-blend/")
     print(f"Shop dashboard: http://127.0.0.1:{port}/mali-blend/orders.html")
